@@ -142,6 +142,7 @@ int main()
     ll.pop_back();
 
     ll.insert(5,1);
+    ll.insert(4,2);
 
     ll.printLL();
 
