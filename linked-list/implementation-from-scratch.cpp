@@ -115,6 +115,24 @@ class List
             temp->next = newNode;
         }
 
+        int search(int key)
+        {
+            Node* temp = head;
+            int pos=0;
+
+            while(temp!=NULL)
+            {
+                if(temp->data == key)
+                {
+                    return pos; 
+                }
+                temp=temp->next;
+                pos++;
+            }
+
+            return -1;
+        }
+
         void printLL()
         {
             Node* temp = head;
@@ -143,6 +161,10 @@ int main()
 
     ll.insert(5,1);
     ll.insert(4,2);
+
+    int index = ll.search(4);
+
+    cout<<index<<endl;
 
     ll.printLL();
 
