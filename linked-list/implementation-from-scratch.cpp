@@ -90,6 +90,31 @@ class List
             tail = temp;
         }
 
+        void insert(int val, int pos)
+        {
+            Node* newNode = new Node(val);
+
+            Node* temp = head;
+
+            if(pos<0)
+            {
+                return;
+            }
+            
+            if(pos==0)
+            {
+                push_front(val);
+            }
+
+            for(int i=0; i<pos-1; i++)
+            {
+                temp = temp->next;
+            }
+            
+            newNode->next = temp->next;
+            temp->next = newNode;
+        }
+
         void printLL()
         {
             Node* temp = head;
@@ -115,6 +140,8 @@ int main()
     ll.pop_front();
     ll.pop_front();
     ll.pop_back();
+
+    ll.insert(5,1);
 
     ll.printLL();
 
