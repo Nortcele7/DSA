@@ -140,7 +140,7 @@ filename.exe
 - **Pointers**: Memory management, references
 - **STL**: Vectors, sets, and other containers
 
-## 🎯 Problem-Solving Approaches
+## 🎯 Problem-Solving Approaches:
 
 Each problem typically includes:
 1. **Brute Force**: Initial straightforward solution
