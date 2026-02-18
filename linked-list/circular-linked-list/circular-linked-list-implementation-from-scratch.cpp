@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 
+// This implements the individual node
 class Node{
     public:
         int data;
