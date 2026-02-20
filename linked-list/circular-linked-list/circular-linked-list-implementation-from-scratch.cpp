@@ -16,7 +16,7 @@ class Node{
     
 };
 
-// This implements the aggregation of individual nodes 
+// This implements the aggregation of individual nodes in the circular linked list
 
 class CircularList{
     Node* head;
