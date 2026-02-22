@@ -65,6 +65,61 @@ class CircularList{
             }
         }
 
+        void deleteAtHead()
+        {
+            if(head==NULL)
+            {
+                return;
+            }
+
+            if(head==tail)
+            {
+                delete head;
+                head = tail = NULL;
+            }
+
+            else
+            {
+                Node* temp = head;
+                head = head->next;
+                tail->next = head;
+                temp->next = NULL;
+                delete temp;
+            }
+        }
+
+        void deleteAtTail()
+        {
+            if(head==NULL)
+            {
+                return;
+            }
+
+            if(head == tail)
+            {
+                delete tail;
+                head = tail = NULL;   
+            }
+
+            else
+            {
+                Node* temp = tail;
+                Node* temp1 = head;
+
+                while(temp1->next != tail)
+                {
+                    temp1 = temp1->next;
+                }
+
+                tail = temp1;
+                tail->next = head;
+
+                temp->next = NULL;
+                delete temp;
+
+            }
+        }
+
         void print()
         {
             if(head==NULL)
@@ -93,6 +148,12 @@ int main()
     cll.insertAtHead(2);
     cll.insertAtHead(3);
     cll.insertAtTail(4);
+    cll.deleteAtHead();
+    cll.deleteAtTail();
+
+
+
+
     
     cll.print();
 
