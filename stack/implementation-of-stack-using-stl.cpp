@@ -2,7 +2,7 @@
 #include<stack>
 using namespace std;
 
-
+// This is implementation of stack using STL
 int main()
 {
     stack<int> s1;
