@@ -3,6 +3,7 @@
 using namespace std;
 
 // This is implementation of stack using STL
+// This implements all the basic functions of stack 
 int main()
 {
     stack<int> s1;
