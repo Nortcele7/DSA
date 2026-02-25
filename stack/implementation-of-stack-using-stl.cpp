@@ -3,7 +3,7 @@
 using namespace std;
 
 // This is implementation of stack using STL
-// This implements all the basic functions of stack 
+// This implements all the basic functions of stack like push and pop
 int main()
 {
     stack<int> s1;
