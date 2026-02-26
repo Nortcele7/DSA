@@ -4,6 +4,7 @@ using namespace std;
 
 // This is implementation of stack using STL
 // This implements all the basic functions of stack like push and pop
+// This is a stack
 int main()
 {
     stack<int> s1;
